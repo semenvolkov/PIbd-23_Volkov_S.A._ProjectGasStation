@@ -1,0 +1,97 @@
+namespace ProjectGasStation.Forms;
+
+partial class FormSales
+{
+    /// <summary>
+    /// Required designer variable.
+    /// </summary>
+    private System.ComponentModel.IContainer components = null;
+
+    /// <summary>
+    /// Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing && (components != null))
+        {
+            components.Dispose();
+        }
+        base.Dispose(disposing);
+    }
+
+    #region Windows Form Designer generated code
+
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
+    {
+        panelButtons = new Panel();
+        buttonAdd = new Button();
+        dataGridViewData = new DataGridView();
+        panelButtons.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dataGridViewData).BeginInit();
+        SuspendLayout();
+        // 
+        // panelButtons
+        // 
+        panelButtons.Controls.Add(buttonAdd);
+        panelButtons.Dock = DockStyle.Right;
+        panelButtons.Location = new Point(652, 0);
+        panelButtons.Name = "panelButtons";
+        panelButtons.Size = new Size(148, 450);
+        panelButtons.TabIndex = 0;
+        // 
+        // buttonAdd
+        // 
+        buttonAdd.Location = new Point(18, 20);
+        buttonAdd.Name = "buttonAdd";
+        buttonAdd.Size = new Size(112, 40);
+        buttonAdd.TabIndex = 0;
+        buttonAdd.Text = "Добавить";
+        buttonAdd.UseVisualStyleBackColor = true;
+        buttonAdd.Click += ButtonAdd_Click;
+        // 
+        // dataGridViewData
+        // 
+        dataGridViewData.AllowUserToAddRows = false;
+        dataGridViewData.AllowUserToDeleteRows = false;
+        dataGridViewData.AllowUserToResizeColumns = false;
+        dataGridViewData.AllowUserToResizeRows = false;
+        dataGridViewData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        dataGridViewData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dataGridViewData.Dock = DockStyle.Fill;
+        dataGridViewData.Location = new Point(0, 0);
+        dataGridViewData.MultiSelect = false;
+        dataGridViewData.Name = "dataGridViewData";
+        dataGridViewData.ReadOnly = true;
+        dataGridViewData.RowHeadersVisible = false;
+        dataGridViewData.RowHeadersWidth = 51;
+        dataGridViewData.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        dataGridViewData.Size = new Size(652, 450);
+        dataGridViewData.TabIndex = 1;
+        // 
+        // FormSales
+        // 
+        AutoScaleDimensions = new SizeF(8F, 20F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(800, 450);
+        Controls.Add(dataGridViewData);
+        Controls.Add(panelButtons);
+        Name = "FormSales";
+        StartPosition = FormStartPosition.CenterParent;
+        Text = "Продажи";
+        Load += FormSales_Load;
+        panelButtons.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)dataGridViewData).EndInit();
+        ResumeLayout(false);
+    }
+
+    #endregion
+
+    private Panel panelButtons;
+    private Button buttonAdd;
+    private DataGridView dataGridViewData;
+}
