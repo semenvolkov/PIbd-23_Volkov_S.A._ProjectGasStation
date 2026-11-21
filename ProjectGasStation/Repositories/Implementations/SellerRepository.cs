@@ -1,5 +1,6 @@
 using ProjectGasStation.Entities;
 using ProjectGasStation.Entities.Enums;
+using ProjectGasStation.Repositories.Interfaces;
 
 namespace ProjectGasStation.Repositories.Implementations;
 

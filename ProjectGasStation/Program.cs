@@ -1,5 +1,5 @@
-using ProjectGasStation.Repositories;
 using ProjectGasStation.Repositories.Implementations;
+using ProjectGasStation.Repositories.Interfaces;
 using Unity;
 using Unity.Lifetime;
 
@@ -23,7 +23,8 @@ internal static class Program
         container.RegisterType<ISupplierRepository, SupplierRepository>(new TransientLifetimeManager());
         container.RegisterType<ISaleRepository, SaleRepository>(new TransientLifetimeManager());
         container.RegisterType<IPurchaseRepository, PurchaseRepository>(new TransientLifetimeManager());
-        
+        container.RegisterType<IFuelPurchaseRepository, FuelPurchaseRepository>(new TransientLifetimeManager());
+
         return container;
     }
 }
