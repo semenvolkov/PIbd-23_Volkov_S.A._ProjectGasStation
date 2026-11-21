@@ -1,6 +1,6 @@
 using ProjectGasStation.Entities;
 using ProjectGasStation.Entities.Enums;
-using ProjectGasStation.Repositories;
+using ProjectGasStation.Repositories.Interfaces;
 
 namespace ProjectGasStation.Forms;
 

@@ -1,4 +1,4 @@
-using ProjectGasStation.Repositories;
+using ProjectGasStation.Repositories.Interfaces;
 using Unity;
 
 namespace ProjectGasStation.Forms;

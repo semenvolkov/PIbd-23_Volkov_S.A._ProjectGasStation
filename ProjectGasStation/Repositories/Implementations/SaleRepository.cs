@@ -1,4 +1,5 @@
 using ProjectGasStation.Entities;
+using ProjectGasStation.Repositories.Interfaces;
 
 namespace ProjectGasStation.Repositories.Implementations;
 

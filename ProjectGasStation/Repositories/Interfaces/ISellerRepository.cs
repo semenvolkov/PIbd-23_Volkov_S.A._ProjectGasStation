@@ -1,6 +1,6 @@
 using ProjectGasStation.Entities;
 
-namespace ProjectGasStation.Repositories;
+namespace ProjectGasStation.Repositories.Interfaces;
 
 public interface ISellerRepository
 {
